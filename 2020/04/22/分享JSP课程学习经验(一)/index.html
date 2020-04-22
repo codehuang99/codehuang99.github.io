@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">archive_a: 2020 | CodeHuang|Blog</title>
+  <title itemprop="name">分享JSP课程的学习经验(一) | CodeHuang|Blog</title>
   
     <link rel="shortcut icon" href="/images/huang_favicon.ico">
   
@@ -324,107 +324,554 @@
   
 </style>
 
-      <div class="blank" style="padding-top: 75px;">
-</div>
-<div id="content" class="site-content">
-  <div id="main">
-    <header class="page-header">
-      <h1 class="cat-title">
-      归档</h1>
-      <span class="cat-des">
-        <p>
-        Archives</p>
-      </span>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/codehuang99/imgBed/img/0.png);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/codehuang99/imgBed/img/0.png">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      分享JSP课程的学习经验(一)</h1>
+      <p class="entry-census">
+        <span>
+          <a href="">
+            <img src="https://cdn.jsdelivr.net/gh/codehuang99/cdn@1.3/logo.jpg">
+          </a>
+        </span>
+        <span>
+          <a href="">CodeHuang</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2020-4-22<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
-    <div id="main-part">
-      <article class="art">
-        <div class="art-main">
-          <div class="art-content">
-            <div id="archives">
-              <p style="text-align:right;">
-                [<span id="al_expand_collapse" style="cursor: s-resize;">
-                全部展开/收缩</span>
-              ]</p>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2020年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      04月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2020/04/22/分享JSP课程学习经验(一)/">
-                          <span style="color:#0bf;">
-                          22日00:00:01</span>
-                          分享JSP课程的学习经验(一)
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2020/04/10/第一次分享/">
-                          <span style="color:#0bf;">
-                          10日00:00:01</span>
-                          第一次分享
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2018年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      12月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2018/12/12/Hexo-Theme-Sakura/">
-                          <span style="color:#0bf;">
-                          12日22:16:01</span>
-                          Hexo-Theme-Sakura
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h2 id="关于此篇要说的"><a href="#关于此篇要说的" class="headerlink" title="关于此篇要说的"></a>关于此篇要说的</h2><p>这篇是我在学习JSP课程的过程中自己根据课上内容总结出来的知识点，我只是自己想要分享下学习经验顺便供自己复习</p>
+<p>大佬请略过，我是小白</p>
+<p>如果觉得有什么不对的，欢迎分享哈</p>
+<h2 id="1、JSP简介"><a href="#1、JSP简介" class="headerlink" title="1、JSP简介"></a>1、JSP简介</h2><p>①JSP全名是：Java Server Pages，用JSP开发的Web应用是跨平台的</p>
+<p>②JSP与Servlet一样是在服务器端运行的，只要有浏览器就能浏览</p>
+<p>③开发环境及开发工具：JDK、TomcatV8.5、MyEclipse2017</p>
+<h2 id="关于中文乱码问题："><a href="#关于中文乱码问题：" class="headerlink" title="关于中文乱码问题："></a>关于中文乱码问题：</h2><p>一般出现乱码是因为三个原因造成的：文件编码≠页面指定编码≠浏览器所使用编码</p>
+<ol>
+<li><p>文件编码：当你代码需要用到外部文件时候例如txt文件，则需要你在保存时候保存为utf-8格式<img src="https://www.yremp.live/images/2020/04/21/imagee9040.png" alt></p>
+</li>
+<li><p>页面指定编码：</p>
+<ol>
+<li><p>在你的jsp文件写入代码之前必须先指定页面的编码，如下图：utf-8格式<img src="https://www.yremp.live/images/2020/04/21/image3a248.png" alt></p>
+</li>
+<li><p>在编写java片段时候加上: request.setCharacterEncoding(“utf-8”)——–request请求时候设置编码; </p>
+</li>
+<li>在java片段里有中文输入时：&lt;%@page import=”java.net.URLEncoder”%&gt;和URLEncoder.encode(需要转换的,”utf-8”)</li>
+</ol>
+</li>
+<li><p>浏览器所使用编码(这里以myEclipse自带运行浏览器为例)：在运行后的界面右键-设置编码-utf8格式<img src="https://www.yremp.live/images/2020/04/21/image0542f.png" alt></p>
+</li>
+</ol>
+<h2 id="2、JSP的基本语法"><a href="#2、JSP的基本语法" class="headerlink" title="2、JSP的基本语法"></a>2、JSP的基本语法</h2><h3 id="在jsp文件里引入java代码的三种方式："><a href="#在jsp文件里引入java代码的三种方式：" class="headerlink" title="在jsp文件里引入java代码的三种方式："></a>在jsp文件里引入java代码的三种方式：</h3><pre><code class="yml"># 第一种是引入声明变量、方法和类：
+&lt;%!
+    # 声明变量，例如：
+    int x=100;
+    # 声明方法，例如：
+    int add(int x,int y){
+        return x+y;
+    }
+    # 声明类，例如：
+    public class Circle{
+
+    }
+%&gt;
+</code></pre>
+<pre><code class="yml"># 第二种是引入表达式：
+&lt;%=Math.sin(0.9)/3 %&gt;        # 相当于输出某个值 
+</code></pre>
+<pre><code class="yml"># 第三种是引入java程序片段：
+&lt;%
+    # 注意：不能写方法或者类
+    int k=0;
+    k++;
+
+ %&gt; 
+</code></pre>
+<h2 id="3、表单的获取"><a href="#3、表单的获取" class="headerlink" title="3、表单的获取"></a>3、表单的获取</h2><h3 id="表单通过form标签的action属性来传递参数"><a href="#表单通过form标签的action属性来传递参数" class="headerlink" title="表单通过form标签的action属性来传递参数"></a>表单通过form标签的action属性来传递参数</h3><pre><code class="yml"># text文本框内容的获取：
+  &lt;%    
+    # 语法：数据类型 变量名=request.getParameter(&quot;input的name属性值&quot;)
+      String name=request.getParameter（&quot;name&quot;）    
+    # 注意：文本框不输入时获取到的数据是空字符串&quot;&quot;而不是null
+  %&gt;    
+</code></pre>
+<pre><code class="yml"># checkbox多选框内容的获取：
+  &lt;%    
+    # 语法：数据类型 变量名[]=request.getParameterValues(&quot;input的name属性值&quot;)
+      String name[]=request.getParameter（&quot;name&quot;）    
+    # 注意：checkbox属性name值是一样的表示是同一组，获取到的是数组，而且是value值
+  %&gt;    
+</code></pre>
+<h2 id="4、时间对象的创建"><a href="#4、时间对象的创建" class="headerlink" title="4、时间对象的创建"></a>4、时间对象的创建</h2><h3 id="包括时间格式等"><a href="#包括时间格式等" class="headerlink" title="包括时间格式等"></a>包括时间格式等</h3><pre><code class="yml"># checkbox多选框内容的获取：
+  &lt;%    
+    # 创建当前时间对象
+    # 此时得到的data为：Wed Apr 22 14:51:05 CST 2020 
+      Date date=new Date(); 
+
+    # 设置时间格式SimpleDateFormat：
+       SimpleDateFormat sdf4=new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;);
+       String date4=sdf4.format(date);     # 此时得到的date4为：2020-04-22 14:51:05
+
+    # 设置时间格式第二种:
+       SimpleDateFormat sdf5=new SimpleDateFormat(&quot;yyyy年MM月dd日  HH:mm:ss.SSS,位于今年第w周,本月第W周,本周E&quot;)
+        String date5=sdf5.format(date);      #此时得到的date5为：2020年04月22日 14:51:05.954,位于今年第17周,本月第4周,本周星期三
+
+ %&gt;    
+</code></pre>
+<h2 id="5、JSP的指令和动作"><a href="#5、JSP的指令和动作" class="headerlink" title="5、JSP的指令和动作"></a>5、JSP的指令和动作</h2><h3 id="Page指令"><a href="#Page指令" class="headerlink" title="Page指令"></a>Page指令</h3><pre><code class="yml"># 语法 &lt;%@page 属性=&quot;内容&quot; %&gt; 例：
+  &lt;%@ page language=&quot;java&quot; contentType=&quot;text/html;charset=UTF-8&quot;%&gt; 
+#参数意义：
+#    contentType=&quot;text/html&quot;;charaset=&quot;utf-8&quot;    表示定义的字符编码和页面响应的类型
+#    errorPage=&quot;error.jsp&quot;                       表示页面出现错误时候要跳转错误的显示页
+#    import=&quot;java.util.*&quot;;                          表示导入的java包
+#    pageEncoding=&quot;utf-8&quot;                        表示jsp页面的字符编码
+
+</code></pre>
+<h3 id="include指令"><a href="#include指令" class="headerlink" title="include指令"></a>include指令</h3><pre><code class="yml"># include表示静态插入，可以在jsp页面中插入其他类似文件，其他的jsp页面等，先包含一起再编译    
+# 语法 &lt;%@ include file= &quot;文件的URL &quot; %&gt;  例：
+  &lt;%@ include file= &quot;hello.txt&quot; %&gt;
+
+</code></pre>
+<h3 id="include动作"><a href="#include动作" class="headerlink" title="include动作"></a>include动作</h3><pre><code class="yml"># include动作是先编译原来jsp页面，当遇到include动作再包含进来编译    
+# 语法 &lt;jsp:include page= &quot;文件的URL&quot;/&gt;&lt;/jsp:include&gt;   例：
+  &lt;jsp:include page= &quot;index2.jsp&quot;/&gt;&lt;/jsp:include&gt;
+
+</code></pre>
+<h3 id="forward动作"><a href="#forward动作" class="headerlink" title="forward动作"></a>forward动作</h3><pre><code class="yml"># forward动作是遇到时停止当前页面而转到其他页面    
+# 语法  &lt;jsp:useBean  id= “给bean起的名字” class= “创建bean的类&quot; scope=&quot;bean有效范围&quot;&gt;&lt;/jsp:useBean&gt;     例：
+  &lt;jsp:forward page=&quot;num1.jsp&quot;&gt;通过name然后获取到的是value值
+      &lt;jsp:param value=&quot;&lt;%= n %&gt;&quot; name=&quot;item&quot;/&gt;
+  &lt;/jsp:forward&gt;
+
+</code></pre>
+<h3 id="useBean动作"><a href="#useBean动作" class="headerlink" title="useBean动作"></a>useBean动作</h3><pre><code class="yml"># useBean动作是可以获取到java类的值    
+# 语法  &lt;jsp:useBean id=&quot;对象名&quot; class=&quot;类名&quot; scope=&quot;作用域&quot; /&gt;    例：
+  &lt;jsp:useBean id=&quot;lader&quot; class=&quot;tom.bean.Lader&quot; scope=&quot;page&quot; /&gt;
+# 参数含义：
+#    id                                            定义该对象名称(自己取名字)
+#    class                                       引入指定的java类名(与已有的java类名对应)
+#    scope=&quot;page/request/session/application&quot;    表示作用域范围，分别是：当前页面，请求过程，session会话期间、每个页面
+#    pageEncoding=&quot;utf-8&quot;                        表示jsp页面的字符编码
+
+#  获取类的值,name对应的是useBean的id值，property对应的是类中定义变量名
+&lt;jsp:getProperty name=&quot;lader&quot; property=&quot;height&quot;  /&gt; 
+
+# 设置类的值,value是你要赋予的值
+&lt;jsp:setProperty name=&quot;lader&quot; property=&quot;height&quot; value=&quot;300&quot; /&gt;             
+</code></pre>
+<h2 id="6、JSP内置对象"><a href="#6、JSP内置对象" class="headerlink" title="6、JSP内置对象"></a>6、JSP内置对象</h2><h3 id="Page对象"><a href="#Page对象" class="headerlink" title="Page对象"></a>Page对象</h3><pre><code class="yml"># pageContext对象设置的属性只能在本页面中取得，无法在第二个页面获得    
+# 语法  pageContext.setAttribute(&quot;属性名&quot;, &quot;属性值&quot;);     例：
+    &lt;%
+        # 设置一个属性为name，值为sun的
+        pageContext.setAttribute(&quot;name&quot;, &quot;sun&quot;);
+        # 在本页面中获取该值-------因为是对象object要强制转换
+        String refName = (String)pageContext.getAttribute(&quot;name&quot;); 
+    %&gt;
+
+</code></pre>
+<h3 id="Request对象"><a href="#Request对象" class="headerlink" title="Request对象"></a>Request对象</h3><pre><code class="yml"># request对象设置的属性可以通过&lt;jsp：forward&gt;传递在别的页面获取到，但通过a传递的获取不到    
+# 语法  request.setAttribute(&quot;属性名&quot;, &quot;属性值&quot;);     例：
+    &lt;%
+        # 设置一个属性为name，值为sun的
+        request.setAttribute(&quot;name&quot;, &quot;sun&quot;);
+        # 在本页面中获取该值-------因为是对象object要强制转换
+        String refName = (String)request.getAttribute(&quot;name&quot;); 
+    %&gt;
+
+</code></pre>
+<h3 id="session对象"><a href="#session对象" class="headerlink" title="session对象"></a>session对象</h3><pre><code class="yml"># session对象设置的属性可以通过&lt;jsp：forward&gt;或者a传递别的页面获得，除非退出浏览器换新浏览器打开
+# session和cookie区别：session是在服务端的，随会话结束而关闭。而Cookie在存在客户端，长期保存在客户端     
+# 语法  session.setAttribute(&quot;属性名&quot;, &quot;属性值&quot;);     例：
+    &lt;%
+        # 设置一个属性为name，值为sun的
+        session.setAttribute(&quot;name&quot;, &quot;sun&quot;);
+        # 在本页面中获取该值-------因为是对象object要强制转换
+        String refName = (String)session.getAttribute(&quot;name&quot;); 
+        # 移除session
+        session.removeAttribute(&quot;设置的session属性名&quot;);
+        session.invalidate();
+    %&gt;
+
+</code></pre>
+<h3 id="Cookie对象"><a href="#Cookie对象" class="headerlink" title="Cookie对象"></a>Cookie对象</h3><pre><code class="yml"># cookie：Cookie在存在客户端，长期保存在客户端     
+    &lt;%
+        # 创建cookie对象并传入值
+        Cookie usernameCookie(自定义名)=new Cookie(&quot;cookie名(自定义)&quot;,传入的值)
+        # 设置cookie生命时长----表示30分钟
+        usernameCookie.setMaxAge(30*60);
+        # 传给浏览器保存
+        response.addCookie(usernameCookie)
+        # 读取浏览器所有cookie，得到数组
+        Cookie[] cookies=request.getCookies();
+        # 读取cookie的键-------获取到的就是你设置的cookie名
+        cookies[i].getName();
+        # 获得cookie的值
+        cookies[i].getValue();
+    %&gt;
+
+</code></pre>
+<h3 id="Response对象"><a href="#Response对象" class="headerlink" title="Response对象"></a>Response对象</h3><pre><code class="yml"># 重定向:当重定向到别的页面时候，地址栏地址变成指定的页面地址，且在原来页面设置的内容获取不到，为null
+# 语法  response.sendRedirect(地址);     例：
+    &lt;%
+        String  url=&quot;regShow.jsp?msg=&quot;+msg;
+        response.sendRedirect(url); 
+    %&gt;
+
+</code></pre>
+<pre><code class="yml"># 转发:当进行转发时候，地址栏地址还是原来的页面地址，且转发后的页面可以获取到数据
+# 语法  request.getRequestDispatcher(地址).forward(request, response);     例：
+    &lt;%
+        String  url=&quot;regShow.jsp?msg=&quot;+msg;
+        request.getRequestDispatcher(url).forward(request, response); 
+    %&gt;
+
+</code></pre>
+<h2 id="调查问卷案例实现思路"><a href="#调查问卷案例实现思路" class="headerlink" title="调查问卷案例实现思路"></a>调查问卷案例实现思路</h2><p><img src="https://www.yremp.live/images/2020/04/22/image86c02.png" alt></p>
+<ol>
+<li>cookie：<ol>
+<li>在newsSelect页面先创建cookie对象，把对应的用户名传进去，设置生命时长，传给浏览器保存</li>
+<li>在index获取cookie数组，先判断是否为空，遍历数组，获取name和value值，先判断name值是哪个进行输出并将对应的value值赋值给表单输入框的value值(这一步目的是：当我们输入用户名提交后再返回index页面，输入框内容会记住你之前的用户名并自动输入)</li>
+</ol>
+</li>
+</ol>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><pre><code class="yml"># index.jsp
+&lt;%@page import=&quot;java.net.URLEncoder&quot;%&gt;
+&lt;%@ page language=&quot;java&quot; import=&quot;java.util.*&quot; pageEncoding=&quot;UTF-8&quot;%&gt;
+
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;&#39;index.jsp&#39;&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div style=&quot;width:800px;margin:10px auto;lineheight:30px;&quot;&gt;
+        &lt;h3&gt;本浏览器已有该网站的Cookie列表&lt;/h3&gt;
+        &lt;%
+            String username=&quot;&quot;;
+            String sex=&quot;&quot;;
+            String sexChecked_0=&quot;&quot;,sexChecked_1=&quot;&quot;;
+            Cookie[] cookies=request.getCookies(); # 读取浏览器的所有cookie，得到数组
+            String name=&quot;&quot;;
+            String value=&quot;&quot;;
+            if(cookies!=null){//如果有cookie值
+                for(int i=0;i&lt;cookies.length;i++){ # 取出对应的名字和值
+                    name=cookies[i].getName();
+                    System.out.println(name);
+                    System.out.println(&quot;-------------&quot;);
+                    value=cookies[i].getValue();
+                    System.out.println(value);
+                    value=URLEncoder.encode(value,&quot;UTF-8&quot;);# 并把值编码
+                    out.print(name+&quot;=&quot;+value+&quot;&lt;br&gt;&quot;);# 输出所有的cookie值,也就是保存之前登陆过的信息
+                    # 表示如果cookie值跟当前用户名一样，则把表单中的cookie的值输入给表单的value值
+                    # 意思就是当你登陆完跳转到选择信息时候如果再点登陆页面他会自动在输入框写上登陆过的用户名和选中的性别
+                    if(name.equals(&quot;username&quot;)){
+                        username=value;
+
+                    }else if(name.equals(&quot;sex&quot;)){
+                        sex=value;
+
+                    }
+
+                }
+                    if(sex.equals(&quot;&quot;)){
+                        out.print(&quot;暂无性别信息&lt;br&gt;&quot;);
+                    }
+                    # 如果cookie的性别value值0则选择女，1选中男
+                    if(sex.equals(&quot;0&quot;)){
+
+                        sexChecked_0=&quot;checked=&#39;checked&#39;&quot;;
+                    }else if(sex.equals(&quot;1&quot;)){
+                        sexChecked_1=&quot;checked=&#39;checked&quot;;
+                    }
+
+                    }
+         %&gt;
+        &lt;hr&gt;
+        &lt;h3&gt;欢迎参加网上调查，请先输入个人信息:&lt;/h3&gt;
+        &lt;form action=&quot;newsSelect.jsp&quot; method=&quot;post&quot;&gt;
+            昵称:&lt;input type=&quot;text&quot; name=&quot;username&quot; value=&lt;%=username %&gt;&gt;&amp;emsp;&amp;emsp;
+            性别:&lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;0&quot; &lt;%=sexChecked_0 %&gt;&gt;女士&lt;/label&gt;
+                &lt;input type=&quot;radio&quot; name=&quot;sex&quot; value=&quot;1&quot; id=&quot;male&quot; &lt;%=sexChecked_1 %&gt;&gt;&lt;label for=&quot;male&quot;&gt;先生&lt;/label&gt;&amp;emsp;&amp;emsp;
+            &lt;input type=&quot;submit&quot; value=&quot;提交&quot; name=&quot;submit&quot;&gt;
+
+        &lt;/form&gt;
+        &amp;emsp;&lt;a href=&quot;./newsSelect.jsp&quot;&gt;选择新闻栏目&lt;/a&gt;&amp;emsp;&amp;emsp;
+        &lt;a href=&quot;./newsSelectShow.jsp&quot;&gt;查看调查结果&lt;/a&gt;
+        &lt;br&gt;
+        session默认在20分钟内有效，也可以设置有效期。浏览器关闭则失败。保存在服务器内存中。&lt;br&gt;
+        cookie通常需设定有效期。保存在本地浏览器的临时文件夹中。
+    &lt;/div&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<pre><code class="yml"># newsSelect.jsp
+&lt;%@page import=&quot;java.net.URLEncoder&quot;%&gt;
+&lt;%@ page language=&quot;java&quot; import=&quot;java.util.*&quot; pageEncoding=&quot;UTF-8&quot;%&gt;
+
+
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;&#39;newsSelect.jsp&#39;&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+   &lt;div  style=&quot;width:800px; margin:10px auto;lineheight:30px;&quot;&gt;
+
+   &lt;%
+    String username=request.getParameter(&quot;username&quot;);
+    String sex=request.getParameter(&quot;sex&quot;);# 返回值是value
+    String usernameSex=(String)session.getAttribute(&quot;usernameSex&quot;);# 从session读取值
+
+    # 此情况是不通过表单提交而直接运行newselect页面才会出现null
+    if(username==null &amp;&amp; usernameSex==null){# 未提交个人信息，也无个人信息session
+        response.sendRedirect(&quot;index.jsp&quot;);# 网页自动转向
+        return;# 结束当前页面运行
+
+    }
+
+    if(username!=null){
+        username=username.trim();
+        if(username.equals(&quot;&quot;)){# 当通过表单提交但没有写入昵称时候此时，输入框获取到的值为空字符串
+            out.print(&quot;请输入昵称:&quot;);
+            out.print(&quot;&lt;br&gt;&lt;br&gt;&lt;a href=&#39;javascript:window.history.back();&#39;&gt;后退&lt;/a&gt;&quot;);
+            return;
+
+        }
+        if(sex==null){# 输入框和单选按钮不一样，单选按钮没选就是null，而输入框没输入则为空字符串
+            out.print(&quot;请选择性别:&quot;);
+            out.print(&quot;&lt;br&gt;&lt;br&gt;&lt;a href=&#39;javascript:window.history.back();&#39;&gt;后退&lt;/a&gt;&quot;);
+            return;
+        }
+        String sexShow=&quot;(性别未知)&quot;;
+
+        if(sex.equals(&quot;0&quot;)){# 当性别获取到的value值为0，即为女生
+            sexShow=&quot;女士&quot;;
+
+        }else if(sex.equals(&quot;1&quot;)){# 当性别获取到的value值为1，即为男生
+            sexShow=&quot;先生&quot;;
+
+        }
+        usernameSex=username+sexShow;# 把姓名和性别联系起来
+        session.setAttribute(&quot;usernameSex&quot;, usernameSex);# 都传输到session
+
+        String usernameEncode=URLEncoder.encode(username,&quot;UTF-8&quot;);# 先把昵称编码
+        Cookie usernameCookie=new Cookie(&quot;username&quot;,usernameEncode);# 创建cookie对象并传入昵称值
+        usernameCookie.setMaxAge(30*60);# 设置生命时长为30分钟，超过时间信息失效
+        response.addCookie(usernameCookie);# 把用户cookie传给浏览器保存
+
+        Cookie sexCookie=new Cookie(&quot;sex&quot;,sex);# 创建cookie对象把性别也传入
+        sexCookie.setMaxAge(30);
+        response.addCookie(sexCookie);# 传给浏览器
+
+    }
+ %&gt;
+      【&lt;%=usernameSex %&gt;】,欢迎参与调查&amp;emsp;(&lt;a href=&quot;./logout.jsp&quot;&gt;退出个人登录&lt;/a&gt;)
+       &lt;br&gt;
+       &lt;h3&gt;请选择你感兴趣的新闻栏目:&lt;/h3&gt;
+       &lt;form action=&quot;./newsSelectShow.jsp&quot; method=&quot;post&quot;&gt;
+           &lt;input type=&quot;checkbox&quot; name=&quot;news&quot; value=&quot;国际时事&quot;&gt;国际时事&lt;br&gt;
+           &lt;input type=&quot;checkbox&quot; name=&quot;news&quot; value=&quot;国内时事&quot;&gt;国内时事&lt;br&gt;
+           &lt;input type=&quot;checkbox&quot; name=&quot;news&quot; value=&quot;体育新闻&quot;&gt;体育新闻&lt;br&gt;
+           &lt;input type=&quot;checkbox&quot; name=&quot;news&quot; value=&quot;娱乐新闻&quot;&gt;娱乐新闻&lt;br&gt;
+           &lt;input type=&quot;checkbox&quot; name=&quot;news&quot; value=&quot;财经新闻&quot;&gt;财经新闻&lt;br&gt;
+           &lt;input type=&quot;submit&quot; value=&quot;提交&quot; name=&quot;submit&quot;&gt;
+   &lt;/form&gt;
+   &lt;a href=&quot;./index.jsp&quot;&gt;输入用户信息&lt;/a&gt;&amp;emsp;&amp;emsp;&lt;a href=&quot;./newsSelectShow.jsp&quot;&gt;查看调查结果&lt;/a&gt;
+   &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<pre><code class="yml"># newsSelectShow.jsp
+&lt;%@ page language=&quot;java&quot; import=&quot;java.util.*&quot; pageEncoding=&quot;UTF-8&quot;%&gt;
+&lt;%@page import=&quot;java.net.URLEncoder&quot;%&gt;
+
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;&#39;newsSelectShow.jsp&#39;&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+     &lt;div  style=&quot;width:800px; margin:10px auto;lineheight:30px;&quot;&gt;
+     &lt;%
+         request.setCharacterEncoding(&quot;utf-8&quot;);
+
+         # 判断如果没有登录，也就是说你没登录就进入了查询结果页面就让你返回index界面
+         String usernameSex=(String)session.getAttribute(&quot;usernameSex&quot;);# 从session读取值
+         if(usernameSex==null){
+             response.sendRedirect(&quot;./index.jsp&quot;);
+             return;
+
+         }
+
+         String news[]=request.getParameterValues(&quot;news&quot;);
+         String msg=&quot;&quot;;
+         if(news==null){
+             msg=&quot;您什么都没有选择&quot;;
+
+         }else{
+             for(int i=0;i&lt;news.length;i++){
+                 msg+=news[i]+&quot;&lt;br&gt;&quot;;
+             }
+
+         }
+
+         Integer count=(Integer)session.getAttribute(&quot;count&quot;);# 选择的轮数
+         if(count==null){# 如果没有参加调查，则为0
+             count=0;
+
+         }
+         if(request.getParameter(&quot;submit&quot;)!=null){
+             count++;
+             session.setAttribute(&quot;count&quot;, count);
+         }
+         msg+=&quot;&lt;br&gt;这是您第【&quot;+count+&quot;】轮选择&quot;;
+      %&gt;
+
+         【&lt;%=usernameSex %&gt;】,欢迎参与调查&amp;emsp;(&lt;a href=&quot;./logout.jsp&quot;&gt;退出个人登录&lt;/a&gt;)
+           &lt;br&gt;
+        &lt;h3&gt;您此次选择的新闻栏目如下：&lt;/h3&gt;
+        &lt;%=msg %&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;a href=&quot;./index.jsp&quot;&gt;输入用户信息&lt;/a&gt;&amp;emsp;&amp;emsp;&lt;a href=&quot;./newsSelect.jsp&quot;&gt;选择新闻栏目&lt;/a&gt;
+
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+
+</code></pre>
+<pre><code class="yml"># logout.jsp
+
+&lt;%@ page language=&quot;java&quot; import=&quot;java.util.*&quot; pageEncoding=&quot;UTF-8&quot;%&gt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;退出登录界面&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div  style=&quot;width:800px; margin:10px auto;lineheight:30px;&quot;&gt;
+        &lt;%
+        session.removeAttribute(&quot;usernameSex&quot;);
+        session.invalidate();
+
+         %&gt;
+
+        &lt;h3&gt;您已成功退出个人登录！&lt;/h3&gt;
+        &lt;a href=&quot;./index.jsp&quot;&gt;输入用户信息&lt;/a&gt;&amp;emsp;&amp;emsp;&lt;a href=&quot;./newsSelect.jsp&quot;&gt;选择新闻栏目&lt;/a&gt;&amp;emsp;&amp;emsp;&lt;a href=&quot;./newsSelectShow.jsp&quot;&gt;查看调查结果&lt;/a&gt;
+
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+
+
+</code></pre>
+
+        </div>
+        <!-- .entry-content -->
+        <!-- <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/codehuang99/cdn@1.1/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/codehuang99/cdn@1.1/img/custom/donate/WeChanQR.jpg"></li>
+              </ul>
             </div>
           </div>
-        </div>
+        </div> -->
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
       </article>
-    </div>
-  </div>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2020/04/10/第一次分享/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://www.yremp.live/images/2020/04/09/WeiYi799317599c456.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://www.yremp.live/images/2020/04/09/WeiYi799317599c456.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                第一次分享</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz",
+        appKey: "mgOpfzbkHYqU92CV4IDlAUHQ",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/codehuang99/cdn@1.3/logo.jpg" itemprop="image" alt="CodeHuang" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author">CodeHuang</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>一个小白</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
 
     </div>    
     <div class="ins-search">
